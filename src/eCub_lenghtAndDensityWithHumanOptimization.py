@@ -27,13 +27,13 @@ humanModel = "human"
 time_out_viz = 5 
 
 # get common path
-common_path = os.path.dirname(os.path.abspath(__file__)) + "/../../"
+common_path = os.path.dirname(os.path.abspath(__file__)) + "/../"
 
 # defining urdf paths
-urdf_path =common_path + "/Models/model.urdf"
+urdf_path =common_path + "/models/model.urdf"
 urdf_path_modified = common_path+"/model_modified.urdf"
-urdf_human_path = common_path+ "/Models/humanSubject04_48dof.urdf"
-urdf_box_path = common_path+"/App/box_idyn.urdf"
+urdf_human_path = common_path+ "/models/humanSubject04_48dof.urdf"
+urdf_box_path = common_path+"/models/box_idyn.urdf"
 
 # defining controlled joint list 
 joints_ctrl_name_list = [
