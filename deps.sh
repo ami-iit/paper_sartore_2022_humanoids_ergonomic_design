@@ -1,7 +1,5 @@
 apt update && \
 apt install -y -qq \
-wget \
-pkg-config \
 build-essential \
 cmake \
 cmake-curses-gui \
@@ -62,4 +60,7 @@ vim \
 wget \
 libqt5opengl5-dev \
 tmuxinator \
-ninja-build \
+python3-dev \
+python3-pip \
+python3-pybind11 \
+ninja-build

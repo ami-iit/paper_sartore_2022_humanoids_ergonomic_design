@@ -1,3 +1,2 @@
-numpy==1.22
-urdf-parser-py
-pyparsing 
+numpy==1.22 
+idyntree
