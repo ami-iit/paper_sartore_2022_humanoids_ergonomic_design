@@ -63,4 +63,5 @@ tmuxinator \
 python3-dev \
 python3-pip \
 python3-pybind11 \
-ninja-build
+ninja-build \
+libirrlicht-dev
