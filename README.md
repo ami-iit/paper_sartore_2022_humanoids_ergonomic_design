@@ -33,7 +33,11 @@ https://user-images.githubusercontent.com/56030908/212954125-6fbbb7e9-ec35-4d0e-
 </div>
 
 ### Installation
-:warning: The repo depends on HSL routine, to correctly link the library please substitute this line of the docker image with the absolute path to the coinhsl.zip
+
+
+:warning: The repository depends on [HSL Mathematical Software Library](https://www.hsl.rl.ac.uk/), to correctly link the library please substitute [this](https://github.com/ami-iit/paper_sartore_2022_humanoids_ergonomic_design/blob/fc5083ca619d9c0dfe4e333fadad6d0f000c0dbf/Dockerfile#L26) line of the docker image with the absolute path to the `coinhsl.zip`
+
+⚠️ This repository depends on [docker](https://docs.docker.com/)
 
 
 To install the repo on a Linux termminal follow the following steps 
@@ -47,15 +51,16 @@ For running the script you have first to disable the control the acess control v
 ```
 xhost +
 ```
-⚠️ We kindly suggest to re-activate once you have collected the results via the following command 
-```
-xhost -
-```
-
 For running the docker image use the following command 
 
 ```
 docker run --net=host --env="DISPLAY=$DISPLAY" --volume="/tmp/.X11-unix:/tmp/.X11-unix" --privileged -it Sartore2022Results
+```
+
+⚠️ We suggest to re-activate once you have collected the results via the following command 
+
+```
+xhost -
 ```
 
 ### Citing this work
