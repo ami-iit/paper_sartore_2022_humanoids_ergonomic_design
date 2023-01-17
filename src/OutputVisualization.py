@@ -14,7 +14,8 @@ class OutputVisualization:
         vizOpt = iDynTree.VisualizerOptions()
         vizOpt.winWidth = 1500
         vizOpt.winHeight = 1500
-        self.viz.init(vizOpt)
+        if not self.viz.init(vizOpt):
+            raise Exception("Could not initialize iDynTree Visualizer")
 
         self.env = self.viz.enviroment()
         self.env.setElementVisibility("floor_grid", True)

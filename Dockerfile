@@ -49,13 +49,13 @@ ENV LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${IPOPT_DIR}/lib
 ENV PATH=${PATH}:${IPOPT_DIR}/lib
 
 RUN apt-get update -y && apt-get install -y libassimp-dev
-RUN apt-get update -y && apt-get install -y coinor-libipopt-dev
+# RUN apt-get update -y && apt-get install -y coinor-libipopt-dev
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 #Installing ADAM 
 RUN git clone --depth=1 --branch humanoidsResults https://github.com/CarlottaSartore/ADAM.git
-RUN cd ADAM && pip install . && cd ..
+RUN cd ADAM && pip install --no-deps . && cd ..
  
 # # Installing urdf-modifier 
 # # RUN conda install -c conda-forge idyntree
@@ -65,6 +65,7 @@ ENV DISPLAY :99
 ENV RESOLUTION 1366x768x24
 
 COPY . .
-RUN  python3 src/eCub_lenghtAndDensityWithHumanOptimization.py
-# # CMD [ "python3", "-m" , "eCub_lenghtAndDensityWithHumanOptimization.py", "run"]
+WORKDIR /src
+# RUN  python3 src/eCub_lenghtAndDensityWithHumanOptimization.py
+CMD [ "python3", "eCub_lenghtAndDensityWithHumanOptimization.py"]
 # CMD [ "/bin/bash" ]
