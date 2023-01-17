@@ -13,7 +13,13 @@ in 2022 IEEE-RAS International Conference on Humanoid Robotics (Humanoids)
 
 <p align="center">
 
+ 
+ 
 
+https://user-images.githubusercontent.com/56030908/212954125-6fbbb7e9-ec35-4d0e-b718-e91360bdb34a.mp4
+
+
+ 
 </p>
 
 <div align="center">
@@ -22,8 +28,8 @@ in 2022 IEEE-RAS International Conference on Humanoid Robotics (Humanoids)
 
 <div align="center">
   <a href="#installation"><b>Installation</b></a> |
-  <a href="http://dx.doi.org/10.1093/ajae/aaq063"><b>Paper</b></a> |
-  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><b>Video</b></a>
+  <a href="https://ieeexplore.ieee.org/document/10000222"><b>Paper</b></a> |
+  <a href=><b>Video</b></a>
 </div>
 
 ### Installation
