@@ -7,13 +7,19 @@
 <div align="center">
 
 C.Sartore, L.Rapetti, D.Pucci _"Optimization of Humanoid Robot Designs for Human-Robot Ergonomic Payload Lifting"_
-_ in 2022 IEEE-RAS International Conference on Humanoid Robotics (Humanoids)
+in 2022 IEEE-RAS International Conference on Humanoid Robotics (Humanoids)
 
 </div>
 
 <p align="center">
 
+ 
+ 
 
+https://user-images.githubusercontent.com/56030908/212954125-6fbbb7e9-ec35-4d0e-b718-e91360bdb34a.mp4
+
+
+ 
 </p>
 
 <div align="center">
@@ -22,27 +28,53 @@ _ in 2022 IEEE-RAS International Conference on Humanoid Robotics (Humanoids)
 
 <div align="center">
   <a href="#installation"><b>Installation</b></a> |
-  <a href="http://dx.doi.org/10.1093/ajae/aaq063"><b>Paper</b></a> |
-  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><b>Video</b></a>
+  <a href="https://ieeexplore.ieee.org/document/10000222"><b>Paper</b></a> |
+  <a href=><b>Video</b></a>
 </div>
 
 ### Installation
 
 
+:warning: The repository depends on [HSL Mathematical Software Library](https://www.hsl.rl.ac.uk/), to correctly link the library please substitute [this](https://github.com/ami-iit/paper_sartore_2022_humanoids_ergonomic_design/blob/fc5083ca619d9c0dfe4e333fadad6d0f000c0dbf/Dockerfile#L26) line of the docker image with the absolute path to the `coinhsl.zip`
+
+⚠️ This repository depends on [docker](https://docs.docker.com/)
+
+
+To install the repo on a Linux termminal follow the following steps 
+
+```
+git clone https://github.com/ami-iit/paper_sartore_2022_humanoids_ergonomic_design.git  
+cd paper_sartore_2022_humanoids_ergonomic_design
+docker build --tag Sartore2022Results . 
+```
+For running the script you have first to disable the control the acess control via the following command 
+```
+xhost +
+```
+For running the docker image use the following command 
+
+```
+docker run --net=host --env="DISPLAY=$DISPLAY" --volume="/tmp/.X11-unix:/tmp/.X11-unix" --privileged -it Sartore2022Results
+```
+
+⚠️ We suggest to re-activate once you have collected the results via the following command 
+
+```
+xhost -
+```
+
 ### Citing this work
 
-If you find the work useful, please consider citing:
-
 ```bibtex
-@ARTICLE{ajae/aaq063,
-  author={Author1, Alfred and Author2, Beatrice},
-  journal={Journal},
-  title={Paper Tile},
-  year={2021},
-  volume={1},
-  number={1},
-  pages={1-6},
-  doi={10.1093/ajae/aaq063}}
+@INPROCEEDINGS{Sartore2022Optimization,
+  author={Sartore, Carlotta and Rapetti, Lorenzo and Pucci, Daniele},
+  booktitle={2022 IEEE-RAS 21st International Conference on Humanoid Robots (Humanoids)}, 
+  title={Optimization of Humanoid Robot Designs for Human-Robot Ergonomic Payload Lifting}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={722-729},
+  doi={10.1109/Humanoids53995.2022.10000222}}
 ```
 
 ### Maintainer
