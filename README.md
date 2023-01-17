@@ -7,7 +7,7 @@
 <div align="center">
 
 C.Sartore, L.Rapetti, D.Pucci _"Optimization of Humanoid Robot Designs for Human-Robot Ergonomic Payload Lifting"_
-_ in 2022 IEEE-RAS International Conference on Humanoid Robotics (Humanoids)
+in 2022 IEEE-RAS International Conference on Humanoid Robotics (Humanoids)
 
 </div>
 
@@ -27,22 +27,43 @@ _ in 2022 IEEE-RAS International Conference on Humanoid Robotics (Humanoids)
 </div>
 
 ### Installation
+:warning: The repo depends on HSL routine, to correctly link the library please substitute this line of the docker image with the absolute path to the coinhsl.zip
 
+
+To install the repo on a Linux termminal follow the following steps 
+
+```
+git clone https://github.com/ami-iit/paper_sartore_2022_humanoids_ergonomic_design.git  
+cd paper_sartore_2022_humanoids_ergonomic_design
+docker build --tag Sartore2022Results . 
+```
+For running the script you have first to disable the control the acess control via the following command 
+```
+xhost +
+```
+⚠️ We kindly suggest to re-activate once you have collected the results via the following command 
+```
+xhost -
+```
+
+For running the docker image use the following command 
+
+```
+docker run --net=host --env="DISPLAY=$DISPLAY" --volume="/tmp/.X11-unix:/tmp/.X11-unix" --privileged -it Sartore2022Results
+```
 
 ### Citing this work
 
-If you find the work useful, please consider citing:
-
 ```bibtex
-@ARTICLE{ajae/aaq063,
-  author={Author1, Alfred and Author2, Beatrice},
-  journal={Journal},
-  title={Paper Tile},
-  year={2021},
-  volume={1},
-  number={1},
-  pages={1-6},
-  doi={10.1093/ajae/aaq063}}
+@INPROCEEDINGS{Sartore2022Optimization,
+  author={Sartore, Carlotta and Rapetti, Lorenzo and Pucci, Daniele},
+  booktitle={2022 IEEE-RAS 21st International Conference on Humanoid Robots (Humanoids)}, 
+  title={Optimization of Humanoid Robot Designs for Human-Robot Ergonomic Payload Lifting}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={722-729},
+  doi={10.1109/Humanoids53995.2022.10000222}}
 ```
 
 ### Maintainer

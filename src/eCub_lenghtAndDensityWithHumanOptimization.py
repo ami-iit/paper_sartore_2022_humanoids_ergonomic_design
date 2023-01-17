@@ -219,7 +219,6 @@ if(OptimizerHelper.number_of_points>1):
         for jj in range(10):
             number_of_figure +=1
             file_name = common_path+"/robotOutput/Output_"+key_word+str(number_of_figure)+".png"
-            VisualizationHelper.viz.drawToFile(file_name)
 
 # if only one box height is considered
 else: 
@@ -238,4 +237,4 @@ else:
     for jj in range(10):
             number_of_figure +=1
             file_name = common_path+"/robotOutput/Output_"+str()+".png"
-            VisualizationHelper.viz.drawToFile(file_name)
+
