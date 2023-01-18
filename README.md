@@ -35,14 +35,14 @@ in 2022 IEEE-RAS International Conference on Humanoid Robotics (Humanoids)
 ⚠️ This repository depends on [docker](https://docs.docker.com/)
 
 
-To install the repo on a Linux termminal follow the following steps 
+To install the repo on a Linux terminal follow the following steps 
 
 ```
 git clone https://github.com/ami-iit/paper_sartore_2022_humanoids_ergonomic_design.git  
 cd paper_sartore_2022_humanoids_ergonomic_design
 docker build --tag sartore2022results . 
 ```
-For running the script you have first to disable the control the acess control via the following command 
+Before running the docker image, you have to disable the acess control to allow the visualization of the optimization output, this can be done via the following command 
 ```
 xhost +
 ```
@@ -52,7 +52,7 @@ For running the docker image use the following command
 docker run --net=host --env="DISPLAY=$DISPLAY" --volume="/tmp/.X11-unix:/tmp/.X11-unix" --privileged -it sartore2022results
 ```
 
-⚠️ We suggest to re-activate once you have collected the results via the following command 
+⚠️  Once you have collected the results, we suggest to re-activate the acess control via the following command  
 
 ```
 xhost -
