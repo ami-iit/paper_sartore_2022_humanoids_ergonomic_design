@@ -3,8 +3,8 @@ idyntree==8.1.0
 jax==0.4.1
 urdfpy==0.0.22
 matplotlib==3.6.3
-scipy
-jaxlib
-prettytable
-urdf_parser_py
-casadi
+scipy==1.10.0
+jaxlib==0.4.1 
+prettytable==3.6.0
+urdf_parser_py==0.0.4
+casadi==3.5.5
