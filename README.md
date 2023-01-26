@@ -30,7 +30,7 @@ in 2022 IEEE-RAS International Conference on Humanoid Robotics (Humanoids)
 ### Installation
 
 
-:warning: The repository depends on [HSL Mathematical Software Library](https://www.hsl.rl.ac.uk/), to correctly link the library please substitute [this](https://github.com/ami-iit/paper_sartore_2022_humanoids_ergonomic_design/blob/fc5083ca619d9c0dfe4e333fadad6d0f000c0dbf/Dockerfile#L26) line of the docker image with the absolute path to the `coinhsl.zip`
+:warning: The repository depends on [HSL for IPOPT (Coin-HSL)](https://www.hsl.rl.ac.uk/ipopt/), to correctly link the library please substitute [this](https://github.com/ami-iit/paper_sartore_2022_humanoids_ergonomic_design/blob/fc5083ca619d9c0dfe4e333fadad6d0f000c0dbf/Dockerfile#L26) line of the docker image with the absolute path to the `coinhsl.zip`. In particular for the paper experiments Coin-HSL 2019.05.21 have been used, but also later version should work fine. 
 
 ⚠️ This repository depends on [docker](https://docs.docker.com/)
 
