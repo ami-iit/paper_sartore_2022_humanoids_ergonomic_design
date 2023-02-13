@@ -13,7 +13,13 @@ in 2022 IEEE-RAS International Conference on Humanoid Robotics (Humanoids)
 
 <p align="center">
 
-[![Video](https://user-images.githubusercontent.com/56030908/213148311-0147d036-41c5-4124-aa90-341ad09b03f8.jpg)](https://www.youtube.com/watch?v=1Lg0Ew7OaXo)
+[![Video](https://user-images.githubusercontent.com/56030908/213148311-0147d036-41c5-4124-aa90-341ad09b03f8.jpg)](https://user-images.githubusercontent.com/56030908/218492675-1d15eaca-cc74-4881-840e-bcd4eaec99a2.mp4)
+
+
+
+
+
+
 
 </p>
 
