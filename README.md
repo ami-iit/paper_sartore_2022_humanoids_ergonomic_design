@@ -40,7 +40,7 @@ in 2022 IEEE-RAS International Conference on Humanoid Robotics (Humanoids)
 ### Installation
 
 
-:warning: The repository depends on [HSL for IPOPT (Coin-HSL)](https://www.hsl.rl.ac.uk/ipopt/), to correctly link the library please substitute [this](https://github.com/ami-iit/paper_sartore_2022_humanoids_ergonomic_design/blob/fc5083ca619d9c0dfe4e333fadad6d0f000c0dbf/Dockerfile#L26) line of the docker image with the absolute path to the `coinhsl.zip`. In particular for the paper experiments Coin-HSL 2019.05.21 have been used, but also later version should work fine. 
+:warning: The repository depends on [HSL for IPOPT (Coin-HSL)](https://www.hsl.rl.ac.uk/ipopt/), to correctly link the library please substitute [this](https://github.com/ami-iit/paper_sartore_2022_humanoids_ergonomic_design/blob/fc5083ca619d9c0dfe4e333fadad6d0f000c0dbf/Dockerfile#L26) line of the docker image with the absolute path to the `coinhsl.zip`. In particular, for the paper experiments, Coin-HSL 2019.05.21 has been used, but also later version should work fine. 
 
 ⚠️ This repository depends on [docker](https://docs.docker.com/)
 
@@ -52,7 +52,7 @@ git clone https://github.com/ami-iit/paper_sartore_2022_humanoids_ergonomic_desi
 cd paper_sartore_2022_humanoids_ergonomic_design
 docker build --tag sartore2022results . 
 ```
-Before running the docker image, you have to disable the acess control to allow the visualization of the optimization output, this can be done via the following command 
+Before running the docker image, you have to disable the access control to allow the visualization of the optimization output, this can be done via the following command 
 ```
 xhost +
 ```
@@ -62,7 +62,7 @@ For running the docker image use the following command
 docker run --net=host --env="DISPLAY=$DISPLAY" --volume="/tmp/.X11-unix:/tmp/.X11-unix" --privileged -it sartore2022results
 ```
 
-⚠️  Once you have collected the results, we suggest to re-activate the acess control via the following command  
+⚠️  Once you have collected the results, we suggest to re-activate the access control via the following command  
 
 ```
 xhost -
